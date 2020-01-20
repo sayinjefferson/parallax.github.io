@@ -1,0 +1,157 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+    
+#home, #about, #contact, #gallery {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+    
+#home .home-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/parallax.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+    
+#home .nav-bar {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    margin: 0 auto;
+}
+.nav-bar ul {
+    padding: 0;
+    float: right;
+    margin: 0;
+    display: flex;
+}
+.nav-bar ul li {
+    display: inline-block;
+    padding: 0 14px;
+    font-family: helvetica;
+    font-size: 1.4rem;
+}
+.nav-bar ul li a {
+    line-height: 80px;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-family: 'Robot', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.nav-bar ul li:active a,
+.nav-bar ul li:hover a {
+    color: rgb(255, 2, 2);
+    background: rgb(0, 0, 0);
+    opacity: .65;
+}
+    
+#about .about-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/parallax-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+    
+#contact .contact-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/parallax-2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+    
+#gallery .gallery-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/parallax-3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+    
+#home .title, #about .title, #contact .title, #gallery .title {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color: white;
+    font-family: helvetica;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+.home-img, .about-img, .contact-img, .gallery-img {
+    background-attachment: fixed;
+    /* opacity: .65; */
+}
+
+#parallax-image .parallax-one{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* background-image: url(http://theartmad.com/wp-content/uploads/2015/09/Best-Desktop-Background-1.jpg); */
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+img {
+      display: block;
+    height: 50vh;
+}
+
+#site-footer {
+	min-height: 5vw;
+	/* DID THIS SO YOU CAN SEE IT AUTOMATICALLY SCALE - SIMULATION RESPONSIVENESS */
+	/* RESIZE THE WINDOW AND THEN SCROLL VERITCALLY AGAIN */
+	background-size: cover;
+	background-position: center;
+}
+@media (max-width: 600px) {
+    .heading {
+        font-size: 150%;
+    }
+    .heading-sm {
+        font-size: 180%;
+    }
+    .two-col {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
